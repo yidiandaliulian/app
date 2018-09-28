@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_803694_yv9mriyao1.css"/>
+</head>
+<body>
+<!--头部-->
+<header>
+    <h1>
+        <i class="iconfont icon-location"></i>
+        <span class="city"></span>
+    </h1>
+    <img src="img/headerj.png" alt="" class="headerj">
+    <h2></h2>
+    <h3></h3>
+    <h4>
+        <div>湿度</div>
+        <div>28%</div>
+    </h4>
+    <h5>天冷了注意保暖~</h5>
+    <div class="dot"></div>
+    <div class="prompt">
+        <div>空气</div>
+        <div class="kongqi">轻度污染</div>
+    </div>
+    <img src="img/screen.png" alt="" class="headerb">
+</header>
+<!--今、明天气-->
+<div class="box">
+    <div class="today">
+        <div class="today-inner">
+            <span>今天</span>
+            <span>
+                <span class="today-h"></span>
+                <span>/</span>
+                <span class="today-l"></span>
+            </span>
+        </div>
+        <div class="today-inner">
+            <span class="today-w"></span>
+            <img src="img/1.png" alt="" class="today-p">
+        </div>
+    </div>
+    <div class="tomorrow">
+        <div class="today-inner">
+            <span>明天</span>
+            <span>
+                 <span class="tomorrow-h"></span>
+                <span>/</span>
+                <span class="tomorrow-l"></span>
+            </span>
+        </div>
+        <div class="today-inner">
+            <span class="tomorrow-w" ></span>
+            <img src="img/0.png" alt="" class="tomorrow-p">
+        </div>
+    </div>
+</div>
+<!--分割线-->
+<div class="break-up"></div>
+<!--每小时时间变化-->
+<ul class="box2">
+
+</ul>
+<!--分割线-->
+<div class="break-up"></div>
+<!--一周天气变化-->
+<ul class="box3">
+   <!-- <li >
+     <div class="top">
+         <span>昨天</span>
+         <span>01/15</span>
+         <span>多云</span>
+         <img src="img/2.png" alt="">
+         <span>3°</span>
+     </div>
+      <div class="floor">
+          <span>-12°</span>
+          <img src="img/2.png" alt="">
+          <span>多云</span>
+          <span>西北风</span>
+          <span>3级</span>
+      </div>-->
+
+
+</ul>
+<!--分割线-->
+<div class="break-up"></div>
+<!--出行活动-->
+<div class="box4">
+  <ul class="first">
+      <li>
+          <i class="iconfont icon-yusan-"></i>
+          <span>不带伞</span>
+          <span>雨伞</span>
+      </li>
+      <li>
+          <i class="iconfont icon-yifu"></i>
+          <span>冷</span>
+          <span>穿衣</span>
+      </li>
+      <li>
+          <i class="iconfont icon-iconset0451"></i>
+          <span>较弱</span>
+          <span>防晒</span>
+      </li>
+      <li>
+          <i class="iconfont icon-yao"></i>
+          <span>较易发</span>
+          <span>感冒</span>
+      </li>
+  </ul>
+    <ul class="second">
+        <li>
+            <i class="iconfont icon-lanqiu"></i>
+            <span>较不易</span>
+            <span>运动</span>
+        </li>
+        <li>
+            <i class="iconfont icon-che"></i>
+            <span>较适宜</span>
+            <span>洗车</span>
+        </li>
+        <li>
+            <i class="iconfont icon-yu"></i>
+            <span>不易</span>
+            <span>钓鱼</span>
+        </li>
+        <li>
+            <i class="iconfont icon-xinxinicon"></i>
+            <span>良好</span>
+            <span>交通</span>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<footer>
+数据来源于中国天气网
+</footer>
+<!--隐藏页面-->
+<div class="hidden">
+  <div class="hidden-top">
+      <input type="text" placeholder="搜索市、区、县等">
+      <i class="iconfont icon-sousuo"></i>
+      <span>取消</span>
+  </div>
+  <!--<section>
+      <div class="stop">
+          <h2>当前定位</h2>
+          <i></i>
+      </div>
+      <div class="some">
+          <p>小店区</p>
+          <p>小店区</p>
+          <p>小店区</p>
+
+      </div>
+  </section>
+    <section>
+        <div class="stop">
+            <h2>历史记录</h2>
+            <i class="iconfont icon-lajitong"></i>
+        </div>
+        <div class="some">
+            <p>拉萨</p>
+            <p>拉萨</p>
+            <p>拉萨</p>
+
+        </div>
+    </section>
+    <section>
+        <div class="stop">
+            <h2>热门城市</h2>
+            <i></i>
+        </div>
+        <div class="some">
+            <p>北京</p>
+            <p>北京</p>
+            <p>北京</p>
+
+        </div>
+    </section>
+    <section>
+        <div class="stop">
+            <h2>热门景区</h2>
+            <i></i>
+        </div>
+        <div class="some">
+            <p>故宫</p>
+            <p>故宫</p>
+            <p>故宫</p>
+
+        </div>
+    </section>-->
+</div>
+</body>
+</html>
